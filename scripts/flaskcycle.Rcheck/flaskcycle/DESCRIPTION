@@ -1,0 +1,15 @@
+Package: flaskcycle
+Type: Package
+Title: Control and tracking of flasks for atmospheric sampling of
+        greenhouse gases
+Version: 1.0
+Date: 2024-11-04
+Author: Carlos A. Sierra
+Maintainer: Carlos A. Sierra <csierra@bgc-jena.mpg.de>
+Description: This package contains a set of functions to track flasks sampled with an ICOS automated flaks sampler, their location, and laboratory submissions.
+License: MIT
+Imports: csvy, yaml
+RoxygenNote: 7.3.2.9000
+NeedsCompilation: no
+Packaged: 2024-11-04 15:31:53 UTC; csierra
+Built: R 4.4.1; ; 2024-11-04 15:32:07 UTC; unix

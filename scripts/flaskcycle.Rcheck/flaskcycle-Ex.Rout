@@ -1,0 +1,468 @@
+
+R version 4.4.1 (2024-06-14) -- "Race for Your Life"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin20
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "flaskcycle"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('flaskcycle')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("sampledBoxes")
+> ### * sampledBoxes
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: sampledBoxes
+> ### Title: Collect all information from the report produced by the
+> ###   autosampler about packed boxes and prints a report
+> ### Aliases: sampledBoxes
+> 
+> ### ** Examples
+> 
+> sampledBoxes()
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2022/ICOS_B0074_221025_182405.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2022/ICOS_B0074_221025_184133.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2022/ICOS_B0074_221129_133759.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2022/ICOS_B0074_221129_134701.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2022/ICOS_B0177_221129_135205.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2022/ICOS_B0177_221210_200118.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2022/ICOS_B0177_221219_183754.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0171_230819_134304.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0171_230819_135158.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0171_230819_140816.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0171_230920_191159.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0171_230920_191617.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0171_230920_192220.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0171_231012_203608.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0171_231012_204317.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0173_230619_183106.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0173_230619_184218.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0173_230619_185248.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0173_230619_191149.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0173_230703_185500.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0173_230703_190207.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0174_230331_205239.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0174_230331_210423.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0174_230407_203157.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0174_230509_203819.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0174_230509_204716.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0174_230509_210102.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0174_230509_210939.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0175_230319_124710.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0175_230319_130730.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0175_230319_133521.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0175_230319_134919.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0175_230331_195644.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0177_230113_192550.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0177_230113_193900.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0177_230113_195148.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2023/ICOS_B0177_230114_181509.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0170_240406_191152.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0170_240406_192428.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0170_240406_193623.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0170_240406_195429.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0170_240530_190823.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0170_240530_191217.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0172_240111_190256.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0176_240112_123847.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0176_240112_124348.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0176_240112_124845.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0176_240112_125510.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0176_240220_192002.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0176_240220_193402.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0176_240220_194259.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0176_240220_195510.csv'
+Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
+  incomplete final line found by readTableHeader on '/Users/csierra/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/2024/ICOS_B0176_240310_180838.csv'
+> 
+> 
+> 
+> cleanEx()
+> nameEx("selectBox")
+> ### * selectBox
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: selectBox
+> ### Title: Selects data for a single box from all sampled boxes
+> ### Aliases: selectBox
+> 
+> ### ** Examples
+> 
+> selectBox(box="B0171", year=2023, sampledBoxes = "~/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/sampledBoxes.csv")
+   sampleID flaskID conditioningRequired batchID batchSize           startTime
+14      460  F03665                    0     485         1 2023-08-10 16:29:59
+15      467  F03675                    0     492         1 2023-08-17 16:29:59
+16      432  F03616                    0     457         1 2023-07-13 16:29:59
+17      439  F03655                    0     464         1 2023-07-20 16:29:59
+18      425  F03680                    0     450         1 2023-07-06 16:30:03
+19      453  F03612                    0     478         1 2023-08-03 16:29:59
+20      446  F03674                    0     471         1 2023-07-27 16:29:59
+21      473  F03649                    0     509         1 2023-08-28 16:30:02
+22      479  F03660                    0     519         1 2023-09-08 16:29:59
+23      476  F03650                    0     506         1 2023-08-31 16:30:02
+24      483  F03631                    0     528         1 2023-09-16 16:29:59
+25      510  F03603                    0     556         1 2023-10-12 09:29:59
+               endTime flaskVolume flaskPort samplerSerialNumber campaignName
+14 2023-08-10 18:00:00           3         6         1706-FS0019    ATTO Site
+15 2023-08-17 18:00:00           3         1         1706-FS0019    ATTO Site
+16 2023-07-13 18:00:00           3        10         1706-FS0019    ATTO Site
+17 2023-07-20 18:00:00           3        11         1706-FS0019    ATTO Site
+18 2023-07-06 18:00:05           3         8         1706-FS0019    ATTO Site
+19 2023-08-03 17:59:59           3        22         1706-FS0019    ATTO Site
+20 2023-07-27 18:00:00           3        24         1706-FS0019    ATTO Site
+21 2023-08-28 18:00:03           3        10         1706-FS0019    ATTO Site
+22 2023-09-08 18:00:00           3        17         1706-FS0019    ATTO Site
+23 2023-08-31 18:00:03           3        24         1706-FS0019    ATTO Site
+24 2023-09-16 18:00:00           3         3         1706-FS0019    ATTO Site
+25 2023-10-12 11:00:00           3        13         1706-FS0019    ATTO Site
+   samplingSiteCode samplingOperator samplingPI.s. isCampaign  latitude
+14               NA      Yago Santos Carlos Sierra          1 -59.00485
+15               NA      Yago Santos Carlos Sierra          1 -59.00485
+16               NA      Yago Santos Carlos Sierra          1 -59.00485
+17               NA      Yago Santos Carlos Sierra          1 -59.00485
+18               NA      Yago Santos Carlos Sierra          1 -59.00485
+19               NA      Yago Santos Carlos Sierra          1 -59.00485
+20               NA      Yago Santos Carlos Sierra          1 -59.00485
+21               NA      Yago Santos Carlos Sierra          1 -59.00485
+22               NA      Yago Santos Carlos Sierra          1 -59.00485
+23               NA      Yago Santos Carlos Sierra          1 -59.00485
+24               NA      Yago Santos Carlos Sierra          1 -59.00485
+25               NA      Yago Santos Carlos Sierra          1 -59.00485
+   longitude altitude intakeHeight comment     flaskInsertTime
+14 -2.145746      112          321      NA 2023-06-19 18:38:20
+15 -2.145746      112          321      NA 2023-05-09 20:41:01
+16 -2.145746      112          321      NA 2023-03-31 21:16:02
+17 -2.145746      112          321      NA 2023-06-19 18:46:49
+18 -2.145746      112          321      NA 2023-07-03 21:11:19
+19 -2.145746      112          321      NA 2023-01-13 19:54:17
+20 -2.145746      112          321      NA 2023-06-19 19:12:11
+21 -2.145746      112          321      NA 2023-08-19 13:53:11
+22 -2.145746      112          321      NA 2023-03-19 13:38:35
+23 -2.145746      112          321      NA 2023-08-19 14:10:56
+24 -2.145746      112          321      NA 2023-03-19 12:49:31
+25 -2.145746      112          321      NA 2023-06-19 19:02:56
+          triggerScheme               samplingProcedure      lastDataExport
+14 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:43:04
+15 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:43:04
+16 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:51:58
+17 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:51:58
+18 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:51:58
+19 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 14:08:16
+20 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 14:08:16
+21 TT  - time triggered air exchange (1/t flow) (01:00) 2023-09-20 19:11:59
+22 TT  - time triggered air exchange (1/t flow) (01:00) 2023-09-20 19:16:17
+23 TT  - time triggered air exchange (1/t flow) (01:00) 2023-09-20 19:22:20
+24 TT  - time triggered air exchange (1/t flow) (01:00) 2023-10-12 20:36:08
+25 TT  - time triggered air exchange (1/t flow) (01:00) 2023-10-12 20:43:17
+   boxID mountPressure samplePressure meanHumidity maxHumidity meanP1 minP1
+14 B0171         1.644          1.796          -50         -50    0.9   0.9
+15 B0171         1.648          1.796          -50         -50    0.9   0.9
+16 B0171         1.647          1.799          -50         -50    0.9   0.9
+17 B0171         1.644          1.799          -50         -50    0.9   0.9
+18 B0171         1.637          1.787          -50         -50    0.9   0.9
+19 B0171         1.645          1.799          -50         -50    0.9   0.9
+20 B0171         1.643          1.799          -50         -50    0.9   0.9
+21 B0171         1.645          1.794          -50         -50    0.9   0.9
+22 B0171         1.658          1.794          -50         -50    0.9   0.9
+23 B0171         1.640          1.794          -50         -50    0.9   0.9
+24 B0171         1.670          1.791          -50         -50    0.9   0.9
+25 B0171         1.647          1.581          -50         -50    0.8   0.5
+   meanFlow movesLeftValve meanLeftOpen maxLeftOpen meanLeftClose maxLeftClose
+14      0.9              6           44          83            59          112
+15      0.9             10           27          33            46           68
+16      0.9             10           23          31            46           57
+17      0.9              4           14          19            30           39
+18      0.9              2           11          21            39           42
+19      0.9             18            8          13            22           30
+20      0.9              4           11          15            28           32
+21      0.9              2           16          21            33           38
+22      0.9             14           28          36            48           54
+23      0.9              2           16          21            29           35
+24      0.9             16           27          30            46           63
+25      0.7             10           13          17            30           37
+   movesRightValve meanRightOpen maxRightOpen meanRightClose maxRightClose
+14               6            28           34             47            64
+15              10            16           18             29            33
+16              10            29           35             49            55
+17               4            24           30             33            38
+18               2            23           33             54            67
+19              18            22           26             37            41
+20               4            11           27             31            38
+21               2            17           23             37            39
+22              14            34           52             58            84
+23               2            30          116             37            46
+24              16            27           67             43            71
+25              10            19           30             33            44
+   isOversampled samplingError resampleID trials decisionToKeep samplePurpose
+14             3             0        247    1/1              1             1
+15             5             0        249    1/1              1             1
+16             5             0        239    1/1              1             1
+17             2             0        241    1/1              1             1
+18             1             0        237    1/1              1             1
+19             9             0        245    1/1              1             1
+20             2             0        243    1/1              1             1
+21             1             0        252    4/6              1             1
+22             7             0        256    1/6              1             1
+23             1             0        253    1/1              1             1
+24             8             0        258    2/6              1             1
+25             5             0          0    1/1              1            NA
+   class subclass keyword fillsample intendedUsage nonstandardFilling
+14    NA       NA      NA         NA         OTHER                 NA
+15    NA       NA      NA         NA         OTHER                 NA
+16    NA       NA      NA         NA         OTHER                 NA
+17    NA       NA      NA         NA         OTHER                 NA
+18    NA       NA      NA         NA         OTHER                 NA
+19    NA       NA      NA         NA         OTHER                 NA
+20    NA       NA      NA         NA         OTHER                 NA
+21    NA       NA      NA         NA         OTHER                 NA
+22    NA       NA      NA         NA         OTHER                 NA
+23    NA       NA      NA         NA         OTHER                 NA
+24    NA       NA      NA         NA         OTHER                 NA
+25    NA       NA      NA         NA         OTHER                 NA
+   externalFillsample
+14                 NA
+15                 NA
+16                 NA
+17                 NA
+18                 NA
+19                 NA
+20                 NA
+21                 NA
+22                 NA
+23                 NA
+24                 NA
+25                 NA
+> selectBox(box="B0171", sampledBoxes = "~/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes/sampledBoxes.csv")
+   sampleID flaskID conditioningRequired batchID batchSize           startTime
+14      460  F03665                    0     485         1 2023-08-10 16:29:59
+15      467  F03675                    0     492         1 2023-08-17 16:29:59
+16      432  F03616                    0     457         1 2023-07-13 16:29:59
+17      439  F03655                    0     464         1 2023-07-20 16:29:59
+18      425  F03680                    0     450         1 2023-07-06 16:30:03
+19      453  F03612                    0     478         1 2023-08-03 16:29:59
+20      446  F03674                    0     471         1 2023-07-27 16:29:59
+21      473  F03649                    0     509         1 2023-08-28 16:30:02
+22      479  F03660                    0     519         1 2023-09-08 16:29:59
+23      476  F03650                    0     506         1 2023-08-31 16:30:02
+24      483  F03631                    0     528         1 2023-09-16 16:29:59
+25      510  F03603                    0     556         1 2023-10-12 09:29:59
+               endTime flaskVolume flaskPort samplerSerialNumber campaignName
+14 2023-08-10 18:00:00           3         6         1706-FS0019    ATTO Site
+15 2023-08-17 18:00:00           3         1         1706-FS0019    ATTO Site
+16 2023-07-13 18:00:00           3        10         1706-FS0019    ATTO Site
+17 2023-07-20 18:00:00           3        11         1706-FS0019    ATTO Site
+18 2023-07-06 18:00:05           3         8         1706-FS0019    ATTO Site
+19 2023-08-03 17:59:59           3        22         1706-FS0019    ATTO Site
+20 2023-07-27 18:00:00           3        24         1706-FS0019    ATTO Site
+21 2023-08-28 18:00:03           3        10         1706-FS0019    ATTO Site
+22 2023-09-08 18:00:00           3        17         1706-FS0019    ATTO Site
+23 2023-08-31 18:00:03           3        24         1706-FS0019    ATTO Site
+24 2023-09-16 18:00:00           3         3         1706-FS0019    ATTO Site
+25 2023-10-12 11:00:00           3        13         1706-FS0019    ATTO Site
+   samplingSiteCode samplingOperator samplingPI.s. isCampaign  latitude
+14               NA      Yago Santos Carlos Sierra          1 -59.00485
+15               NA      Yago Santos Carlos Sierra          1 -59.00485
+16               NA      Yago Santos Carlos Sierra          1 -59.00485
+17               NA      Yago Santos Carlos Sierra          1 -59.00485
+18               NA      Yago Santos Carlos Sierra          1 -59.00485
+19               NA      Yago Santos Carlos Sierra          1 -59.00485
+20               NA      Yago Santos Carlos Sierra          1 -59.00485
+21               NA      Yago Santos Carlos Sierra          1 -59.00485
+22               NA      Yago Santos Carlos Sierra          1 -59.00485
+23               NA      Yago Santos Carlos Sierra          1 -59.00485
+24               NA      Yago Santos Carlos Sierra          1 -59.00485
+25               NA      Yago Santos Carlos Sierra          1 -59.00485
+   longitude altitude intakeHeight comment     flaskInsertTime
+14 -2.145746      112          321      NA 2023-06-19 18:38:20
+15 -2.145746      112          321      NA 2023-05-09 20:41:01
+16 -2.145746      112          321      NA 2023-03-31 21:16:02
+17 -2.145746      112          321      NA 2023-06-19 18:46:49
+18 -2.145746      112          321      NA 2023-07-03 21:11:19
+19 -2.145746      112          321      NA 2023-01-13 19:54:17
+20 -2.145746      112          321      NA 2023-06-19 19:12:11
+21 -2.145746      112          321      NA 2023-08-19 13:53:11
+22 -2.145746      112          321      NA 2023-03-19 13:38:35
+23 -2.145746      112          321      NA 2023-08-19 14:10:56
+24 -2.145746      112          321      NA 2023-03-19 12:49:31
+25 -2.145746      112          321      NA 2023-06-19 19:02:56
+          triggerScheme               samplingProcedure      lastDataExport
+14 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:43:04
+15 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:43:04
+16 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:51:58
+17 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:51:58
+18 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 13:51:58
+19 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 14:08:16
+20 TT  - time triggered air exchange (1/t flow) (01:00) 2023-08-19 14:08:16
+21 TT  - time triggered air exchange (1/t flow) (01:00) 2023-09-20 19:11:59
+22 TT  - time triggered air exchange (1/t flow) (01:00) 2023-09-20 19:16:17
+23 TT  - time triggered air exchange (1/t flow) (01:00) 2023-09-20 19:22:20
+24 TT  - time triggered air exchange (1/t flow) (01:00) 2023-10-12 20:36:08
+25 TT  - time triggered air exchange (1/t flow) (01:00) 2023-10-12 20:43:17
+   boxID mountPressure samplePressure meanHumidity maxHumidity meanP1 minP1
+14 B0171         1.644          1.796          -50         -50    0.9   0.9
+15 B0171         1.648          1.796          -50         -50    0.9   0.9
+16 B0171         1.647          1.799          -50         -50    0.9   0.9
+17 B0171         1.644          1.799          -50         -50    0.9   0.9
+18 B0171         1.637          1.787          -50         -50    0.9   0.9
+19 B0171         1.645          1.799          -50         -50    0.9   0.9
+20 B0171         1.643          1.799          -50         -50    0.9   0.9
+21 B0171         1.645          1.794          -50         -50    0.9   0.9
+22 B0171         1.658          1.794          -50         -50    0.9   0.9
+23 B0171         1.640          1.794          -50         -50    0.9   0.9
+24 B0171         1.670          1.791          -50         -50    0.9   0.9
+25 B0171         1.647          1.581          -50         -50    0.8   0.5
+   meanFlow movesLeftValve meanLeftOpen maxLeftOpen meanLeftClose maxLeftClose
+14      0.9              6           44          83            59          112
+15      0.9             10           27          33            46           68
+16      0.9             10           23          31            46           57
+17      0.9              4           14          19            30           39
+18      0.9              2           11          21            39           42
+19      0.9             18            8          13            22           30
+20      0.9              4           11          15            28           32
+21      0.9              2           16          21            33           38
+22      0.9             14           28          36            48           54
+23      0.9              2           16          21            29           35
+24      0.9             16           27          30            46           63
+25      0.7             10           13          17            30           37
+   movesRightValve meanRightOpen maxRightOpen meanRightClose maxRightClose
+14               6            28           34             47            64
+15              10            16           18             29            33
+16              10            29           35             49            55
+17               4            24           30             33            38
+18               2            23           33             54            67
+19              18            22           26             37            41
+20               4            11           27             31            38
+21               2            17           23             37            39
+22              14            34           52             58            84
+23               2            30          116             37            46
+24              16            27           67             43            71
+25              10            19           30             33            44
+   isOversampled samplingError resampleID trials decisionToKeep samplePurpose
+14             3             0        247    1/1              1             1
+15             5             0        249    1/1              1             1
+16             5             0        239    1/1              1             1
+17             2             0        241    1/1              1             1
+18             1             0        237    1/1              1             1
+19             9             0        245    1/1              1             1
+20             2             0        243    1/1              1             1
+21             1             0        252    4/6              1             1
+22             7             0        256    1/6              1             1
+23             1             0        253    1/1              1             1
+24             8             0        258    2/6              1             1
+25             5             0          0    1/1              1            NA
+   class subclass keyword fillsample intendedUsage nonstandardFilling
+14    NA       NA      NA         NA         OTHER                 NA
+15    NA       NA      NA         NA         OTHER                 NA
+16    NA       NA      NA         NA         OTHER                 NA
+17    NA       NA      NA         NA         OTHER                 NA
+18    NA       NA      NA         NA         OTHER                 NA
+19    NA       NA      NA         NA         OTHER                 NA
+20    NA       NA      NA         NA         OTHER                 NA
+21    NA       NA      NA         NA         OTHER                 NA
+22    NA       NA      NA         NA         OTHER                 NA
+23    NA       NA      NA         NA         OTHER                 NA
+24    NA       NA      NA         NA         OTHER                 NA
+25    NA       NA      NA         NA         OTHER                 NA
+   externalFillsample
+14                 NA
+15                 NA
+16                 NA
+17                 NA
+18                 NA
+19                 NA
+20                 NA
+21                 NA
+22                 NA
+23                 NA
+24                 NA
+25                 NA
+> 
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  0.239 0.024 0.263 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')
