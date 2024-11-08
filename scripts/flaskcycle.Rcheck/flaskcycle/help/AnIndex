@@ -1,5 +1,7 @@
 checkBox	checkBox
+getBox	getBox
 load_cf	load_cf
+plotBox	plotBox
 sampledBoxes	sampledBoxes
 selectBox	selectBox
 submissionInfo	submissionInfo

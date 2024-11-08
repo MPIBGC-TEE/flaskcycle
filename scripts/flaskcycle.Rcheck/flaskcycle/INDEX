@@ -1,6 +1,8 @@
 checkBox                Check if flasks in a box have been recorded as
                         sampled from the autosampler
+getBox                  Get box data and metadata from control file
 load_cf                 Load control file, data and metadata
+plotBox                 Plots the box with the containing flasks
 sampledBoxes            Collect all information from the report
                         produced by the autosampler about packed boxes
                         and prints a report
