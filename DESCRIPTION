@@ -7,5 +7,6 @@ Author: Carlos A. Sierra
 Maintainer: Carlos A. Sierra <csierra@bgc-jena.mpg.de>
 Description: This package contains a set of functions to track flasks sampled with an ICOS automated flaks sampler, their location, and laboratory submissions.
 License: MIT
+Encoding: UTF-8
 Imports: csvy, yaml
 RoxygenNote: 7.3.2.9000

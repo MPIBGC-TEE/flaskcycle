@@ -25,6 +25,25 @@ Type 'q()' to quit R.
 > base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
 > base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
 > cleanEx()
+> nameEx("getSampledBox")
+> ### * getSampledBox
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: getSampledBox
+> ### Title: Get information of a sampled box from a report from the
+> ###   autosampler
+> ### Aliases: getSampledBox
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> ##D getSampledBox(file="FlaskCycle/packedBoxes/sampledBoxes.csv", box="B0171")
+> ## End(Not run)
+> 
+> 
+> 
+> cleanEx()
 > nameEx("sampledBoxes")
 > ### * sampledBoxes
 > 
@@ -456,7 +475,7 @@ Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
 > cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  0.243 0.026 0.27 0 0 
+Time elapsed:  0.236 0.024 0.26 0 0 
 > grDevices::dev.off()
 null device 
           1 

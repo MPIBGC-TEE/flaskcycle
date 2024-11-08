@@ -6,6 +6,25 @@ library('flaskcycle')
 base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
 base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
 cleanEx()
+nameEx("getSampledBox")
+### * getSampledBox
+
+flush(stderr()); flush(stdout())
+
+### Name: getSampledBox
+### Title: Get information of a sampled box from a report from the
+###   autosampler
+### Aliases: getSampledBox
+
+### ** Examples
+
+## Not run: 
+##D getSampledBox(file="FlaskCycle/packedBoxes/sampledBoxes.csv", box="B0171")
+## End(Not run)
+
+
+
+cleanEx()
 nameEx("sampledBoxes")
 ### * sampledBoxes
 

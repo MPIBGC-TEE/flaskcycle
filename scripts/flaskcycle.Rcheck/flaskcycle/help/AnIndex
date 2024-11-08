@@ -1,5 +1,6 @@
 checkBox	checkBox
 getBox	getBox
+getSampledBox	getSampledBox
 load_cf	load_cf
 plotBox	plotBox
 sampledBoxes	sampledBoxes

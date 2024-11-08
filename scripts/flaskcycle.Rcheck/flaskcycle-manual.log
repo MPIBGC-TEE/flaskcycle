@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.5)  8 NOV 2024 14:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.5)  8 NOV 2024 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\input ./Rd2.tex \input ./Rd2.tex \input ./Rd2.tex
+**\input ./Rd2.tex \input ./Rd2.tex \input ./Rd2.tex \input ./Rd2.tex
 (./Rd2.tex
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
@@ -347,8 +347,8 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count294
 \l__pdf_internal_box=\box58
 )
-(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/Rtmp37Nke1/Rd2pdf6602
-4beb3bd7/Rd2.aux)
+(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/RtmpMUzn1s/Rd2pdf7681
+1c82897b/Rd2.aux)
 \openout1 = `Rd2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -386,10 +386,10 @@ LaTeX Font Info:    ... okay on input line 8.
 )
 Package hyperref Info: Link coloring ON on input line 8.
 
-(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/Rtmp37Nke1/Rd2pdf6602
-4beb3bd7/Rd2.out)
-(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/Rtmp37Nke1/Rd2pdf6602
-4beb3bd7/Rd2.out)
+(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/RtmpMUzn1s/Rd2pdf7681
+1c82897b/Rd2.out)
+(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/RtmpMUzn1s/Rd2pdf7681
+1c82897b/Rd2.out)
 \@outlinefile=\write4
 \openout4 = `Rd2.out'.
 
@@ -402,8 +402,8 @@ File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 10.0pt on input line 23.
 
-(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/Rtmp37Nke1/Rd2pdf6602
-4beb3bd7/Rd2.toc
+(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/RtmpMUzn1s/Rd2pdf7681
+1c82897b/Rd2.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -428,51 +428,51 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024
 /texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] [2]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 151.
- [3]
-Overfull \hbox (134.26862pt too wide) in paragraph at lines 183--183
+(Font)              scaled to size 9.0pt on input line 113.
+ [3] [4]
+Overfull \hbox (134.26862pt too wide) in paragraph at lines 224--224
  []\T1/zi4/m/n/9 selectBox(box="B0171", year=2023, sampledBoxes = "~/Repos/ATTO
 _flask_sampling/FlaskCycle/packedBoxes/sampledBoxes.csv") 
  []
 
 
-Overfull \hbox (86.27168pt too wide) in paragraph at lines 184--184
+Overfull \hbox (86.27168pt too wide) in paragraph at lines 225--225
  []\T1/zi4/m/n/9 selectBox(box="B0171", sampledBoxes = "~/Repos/ATTO_flask_samp
 ling/FlaskCycle/packedBoxes/sampledBoxes.csv")[] 
  []
 
-[4]
-(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/Rtmp37Nke1/Rd2pdf6602
-4beb3bd7/Rd2.ind [5] [6
+[5]
+(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/RtmpMUzn1s/Rd2pdf7681
+1c82897b/Rd2.ind [6] [7
 
 
 ])
-(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/Rtmp37Nke1/Rd2pdf6602
-4beb3bd7/Rd2.aux)
+(/private/var/folders/ww/ms12h31127j_k8ml9ybjch680000gq/T/RtmpMUzn1s/Rd2pdf7681
+1c82897b/Rd2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
-(rerunfilecheck)             Checksum: DAA6C6FDB51D4A54602089CD507361D8;819.
+(rerunfilecheck)             Checksum: 1DA018DB32890D3B118DE882383B3A22;938.
  ) 
 Here is how much of TeX's memory you used:
- 10534 strings out of 474116
- 159407 string characters out of 5743683
- 1940187 words of memory out of 5000000
- 32660 multiletter control sequences out of 15000+600000
+ 10543 strings out of 474116
+ 159525 string characters out of 5743683
+ 1939187 words of memory out of 5000000
+ 32661 multiletter control sequences out of 15000+600000
  591622 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,6n,95p,296b,624s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 92i,5n,95p,313b,702s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
 a-zi4r.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loc
 al/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (6 pages, 81004 bytes).
+Output written on Rd2.pdf (7 pages, 83250 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 60 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

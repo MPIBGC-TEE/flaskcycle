@@ -2,6 +2,7 @@
 
 export(checkBox)
 export(getBox)
+export(getSampledBox)
 export(load_cf)
 export(plotBox)
 export(sampledBoxes)
