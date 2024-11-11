@@ -2,13 +2,12 @@
 #' 
 #' @param samplerBoxData A data.frame of sampled boxes produced as a report from
 #' the autosampler and loaded using the function selectBox
-#' @param manualList a data.frame with flask IDs manually produced at the time of 
-#' checking a box.
+#' @param controlFile a list with control file data produced by load_cf
 #' 
-#' @return a logical vector of flasks that match both lists. 
+#' @return a vector with the position of the flasks that match the sampler box data. 
 #' @export
 #' 
 checkBox <-
-function(samplerBoxData, manualList){
-  match(manualList$Flask, samplerBoxData$flaskID)
+function(samplerBoxData, controlFile){
+  match(controlFile$data$Flask, samplerBoxData$flaskID)
 }

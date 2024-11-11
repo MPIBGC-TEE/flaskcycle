@@ -475,7 +475,7 @@ Warning in read.table(file = file, header = header, sep = sep, quote = quote,  :
 > cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  0.236 0.024 0.26 0 0 
+Time elapsed:  0.242 0.025 0.276 0 0 
 > grDevices::dev.off()
 null device 
           1 

@@ -4,17 +4,16 @@
 \alias{checkBox}
 \title{Check if flasks in a box have been recorded as sampled from the autosampler}
 \usage{
-checkBox(samplerBoxData, manualList)
+checkBox(samplerBoxData, controlFile)
 }
 \arguments{
 \item{samplerBoxData}{A data.frame of sampled boxes produced as a report from
 the autosampler and loaded using the function selectBox}
 
-\item{manualList}{a data.frame with flask IDs manually produced at the time of 
-checking a box.}
+\item{controlFile}{a list with control file data produced by load_cf}
 }
 \value{
-a logical vector of flasks that match both lists.
+a vector with the position of the flasks that match the sampler box data.
 }
 \description{
 Check if flasks in a box have been recorded as sampled from the autosampler
