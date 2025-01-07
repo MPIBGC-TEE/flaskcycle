@@ -11,6 +11,7 @@ plotGas(
   end = "2023-12-31",
   sigma = NULL,
   type = "b",
+  flag = NULL,
   ...
 )
 }
@@ -26,6 +27,8 @@ plotGas(
 \item{sigma}{character string with the name of the variable that represents the uncertainty in the data}
 
 \item{type}{argument passed to plot() for the type of plot}
+
+\item{flag}{vector of integers with observations to flag}
 
 \item{...}{other arguments passed to plot()}
 }
