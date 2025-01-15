@@ -2,7 +2,7 @@
 % Please edit documentation in R/sampledBoxes.R
 \name{sampledBoxes}
 \alias{sampledBoxes}
-\title{Collect all information from the report produced by the autosampler about 
+\title{Collect all information from the report produced by the autosampler about
 packed boxes and prints a report}
 \usage{
 sampledBoxes(
@@ -19,7 +19,7 @@ sampledBoxes(
 a csv file with the data of all sampled boxes
 }
 \description{
-Collect all information from the report produced by the autosampler about 
+Collect all information from the report produced by the autosampler about
 packed boxes and prints a report
 }
 \examples{

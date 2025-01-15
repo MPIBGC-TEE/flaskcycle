@@ -12,7 +12,7 @@ getSampledBox(
 )
 }
 \arguments{
-\item{file}{a character string with the location of the csv file containing information from the autosampler. 
+\item{file}{a character string with the location of the csv file containing information from the autosampler.
 Usually a result to a call to the function sampledBoxes}
 
 \item{box}{character string with the Box ID}
