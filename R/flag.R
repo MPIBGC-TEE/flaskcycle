@@ -9,10 +9,10 @@
 #' @param ts a numeric time series for a gas species
 #' @param outliers a vector of outliers identified by the function [smoothingSpline()]
 #' 
-#' @return an integer vector with values of 0 for observations that pass the
+#' @return A vector with values of 0 for observations that pass the
 #' time series test, and a numeric value of 1 for observations that do not pass 
 #' the test. Observations with a flag of 1 are not representative of a regional
-#' scale background
+#' scale background.
 #' 
 #' @export
 #' 
@@ -21,3 +21,4 @@ flag<-function(ts, outliers){
   f[match(outliers, ts)]<-1
   return(f)
 }
+

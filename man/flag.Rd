@@ -12,10 +12,10 @@ flag(ts, outliers)
 \item{outliers}{a vector of outliers identified by the function \code{\link[=smoothingSpline]{smoothingSpline()}}}
 }
 \value{
-an integer vector with values of 0 for observations that pass the
+A vector with values of 0 for observations that pass the
 time series test, and a numeric value of 1 for observations that do not pass
 the test. Observations with a flag of 1 are not representative of a regional
-scale background
+scale background.
 }
 \description{
 Flags for data based on a time series test. The input to the function should
