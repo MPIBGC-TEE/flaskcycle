@@ -7,6 +7,7 @@
 #' * `outliers`: numeric vector with identified outliers
 #' * `smooth.spline`: the obtained smoothing spline (class smooth.spline)
 #' * `predict,spline`: numeric smoothing spline as a data.frame
+#' * `rmse`: root mean squared error of residuals with respect to smoothed values
 #' 
 #' @export
 #' 
@@ -22,12 +23,13 @@ smoothingSpline<-function(x, gas){
     sspl<-stats::smooth.spline(dt)
     p<-stats::predict(sspl)
     res<-sspl$data$y - p$y
-    r<-abs(res) >= 3*sqrt(mean(res^2))
+    rmse<-sqrt(mean(res^2))
+    r<-abs(res) >= 3*rmse
     outlier=c(outlier, sspl$data$y[r])
     indout=match(outlier, dt0$y)
     dt=dt0[-indout,]
     test=sum(r)
   }
   
-  return(list(outliers=outlier, smooth.spline=sspl, predict.spline=as.data.frame(p)))
+  return(list(outliers=outlier, smooth.spline=sspl, predict.spline=as.data.frame(p), rmse=rmse))
 }

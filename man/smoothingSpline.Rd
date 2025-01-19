@@ -17,6 +17,7 @@ A list with three elements:
 \item \code{outliers}: numeric vector with identified outliers
 \item \code{smooth.spline}: the obtained smoothing spline (class smooth.spline)
 \item \verb{predict,spline}: numeric smoothing spline as a data.frame
+\item \code{rmse}: root mean squared error of residuals with respect to smoothed values
 }
 }
 \description{
