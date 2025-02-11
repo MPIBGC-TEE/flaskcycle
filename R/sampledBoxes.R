@@ -14,7 +14,7 @@ sampledBoxes <-
 function(fromWhere="~/Repos/ATTO_flask_sampling/FlaskCycle/packedBoxes", toWhere=fromWhere){
   allFiles<-list.files(path=fromWhere, pattern = "*.csv", recursive = TRUE,
                        full.names = TRUE)
-  allData<-lapply(allFiles[-length(allFiles)], read.csv2) # Removes last entry assuming this is the file produced by this function
-  allSampledFlasks=do.call(rbind,allData[c(-1,-2)]) # Removing the 2021 data, which has errors in startTime
+  allData<-lapply(allFiles, read.csv2) 
+  allSampledFlasks=do.call(rbind,allData) 
   write.csv(allSampledFlasks, file=paste0(toWhere, "/sampledBoxes.csv"), row.names = FALSE)
 }

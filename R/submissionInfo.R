@@ -9,7 +9,7 @@
 #' 
 submissionInfo <-
 function(box, file="~/Repos/ATTO_flask_sampling/FlaskCycle/SubmissionFiles/Aug2024.csv"){
-  vars<-c("flaskID", "boxID", "startTime", "endTime", "samplePressure")
-  samplingTime<-as.POSIXct(box$startTime, tz="UTC") + (30*60) # Half hour after sampling startTime representative sampling time
+  vars<-c("flaskID", "boxID", "startTime", "endTime", "samplePressure", "intakeHeight")
+  samplingTime<-as.POSIXct(box$endTime, tz="UTC") - (30*60) # Half hour before endTime
   write.csv(cbind(box[,vars], samplingTime), file, row.names = FALSE)
 }
