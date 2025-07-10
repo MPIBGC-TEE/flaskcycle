@@ -21,7 +21,7 @@ smoothingSpline<-function(x, gas){
   outlier=NULL
   while(test!=0){
     sspl<-stats::smooth.spline(dt)
-    p<-stats::predict(sspl)
+    p<-stats::predict(sspl, x=dt$time)
     res<-sspl$data$y - p$y
     rmse<-sqrt(mean(res^2))
     r<-abs(res) >= 3*rmse
