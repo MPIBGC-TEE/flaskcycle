@@ -9,5 +9,5 @@ Description: This package contains a set of functions to track flasks sampled wi
 License: MIT
 Encoding: UTF-8
 Imports: csvy, yaml, lubridate
-RoxygenNote: 7.3.2.9000
+RoxygenNote: 7.3.3
 Roxygen: list(markdown = TRUE)
